@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Electronic Skin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tactile_main">TactileMainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_general_info">GeneralInfoActivity</string>
+    <string name="title_activity_visual_info">VisualInfoActivity</string>
+    <string name="title_activity_detail_info">DetailInfoActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="add_values">Add</string>
+    <string name="label_temp_name_str">Temperature</string>
+    <string name="label_hum_name_str">Humidity</string>
+    <string name="label_temp_unit_str">℃</string>
+    <string name="label_hum_unit_str">%rH</string>
+    <string name="label_detail_temp_name_str">Temperature Sensor </string>
+    <string name="label_detail_hum_name_str">Humidity Sensor</string>
+    <string name="label_set_wel">Setting page, hosted for control and sensor settings</string>
+    <string name="label_history_area_str">View History Info</string>
+    <string name="label_realtime_area_str">Back to search real time info</string>
+    <string name="button_history_area_one_hour">In an hour</string>
+    <string name="button_history_area_one_day">Today</string>
+    <string name="button_history_area_one_month">In this month</string>
+    <string name="label_history_area_detail_query_day_name">Search by day </string>
+    <string name="label_history_area_detail_query_hour_name">Search by hour</string>
+    <string name="button_query_str">Search</string>
+
+    <string name="project">Project</string>
+    <string name="range">Range</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="min">Min Value</string>
+    <string name="max">Max Value</string>
+    <string name="mid">Middle Value</string>
+    <string name="confirm">Confirm</string>
+    <string name="inflammation">Inflammation</string>
+    <string name="enable">Enable</string>
+    <string name="seconds">Seconds</string>
+    
+    <string name="highlighted">Please Click the Highlighted Areas Deployed with Electronic Skin</string>
+
+</resources>

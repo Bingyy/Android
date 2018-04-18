@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="6" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:padding="5dp"
+        android:text="@string/project" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:padding="5dp"
+        android:text="@string/temperature" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:padding="5dp"
+        android:text="@string/humidity" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:padding="5dp"
+        android:text="@string/min" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:padding="5dp"
+        android:text="@string/mid" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:padding="5dp"
+        android:text="@string/max" />
+
+    <EditText
+        android:id="@+id/setting_th_et_temp_min"
+        android:layout_width="60dp"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="10"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/setting_th_et_temp_mid"
+        android:layout_width="60dp"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="20"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setting_th_et_temp_max"
+        android:layout_width="60dp"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="30"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setting_th_et_press_min"
+        android:layout_width="60dp"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="30"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setting_th_et_press_mid"
+        android:layout_width="60dp"
+        android:layout_column="2"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="50"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setting_th_et_press_max"
+        android:layout_width="60dp"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="80"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/setting_th_bt_ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_row="5"
+        android:gravity="center"
+        android:text="@string/confirm" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="4"
+        android:padding="5dp"
+        android:text="@string/inflammation" />
+
+    <EditText
+        android:id="@+id/setting_th_et_germ_min"
+        android:layout_width="60dp"
+        android:layout_column="1"
+        android:layout_gravity="left|top"
+        android:layout_row="4"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="38"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/setting_th_et_germ_max"
+        android:layout_width="60dp"
+        android:layout_column="3"
+        android:layout_gravity="left|top"
+        android:layout_row="4"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:text="42"
+        android:textSize="12sp" />
+
+</GridLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature："
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/setting_bc_tv_minvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Press："
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inflammation："
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert Info："
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/general_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/general_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/general_germ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/general_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Available"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="328dp" >
+
+        <ImageView
+            android:id="@+id/general_img_hand"
+            android:layout_width="92dp"
+            android:layout_height="126dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/hand" />
+
+        <ImageView
+            android:id="@+id/general_img_germ"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:layout_above="@+id/general_img_fire"
+            android:layout_marginBottom="23dp"
+            android:layout_toLeftOf="@+id/general_img_needle"
+            android:src="@drawable/germ" />
+
+        <ImageView
+            android:id="@+id/general_img_alert"
+            android:layout_width="80dp"
+            android:layout_height="86dp"
+            android:layout_below="@+id/general_img_hand"
+            android:layout_toLeftOf="@+id/general_img_needle"
+            android:src="@drawable/alert" />
+
+        <ImageView
+            android:id="@+id/general_img_needle"
+            android:layout_width="46dp"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@+id/general_img_fire"
+            android:layout_toRightOf="@+id/general_img_hand"
+            android:src="@drawable/needle" />
+
+        <ImageView
+            android:id="@+id/general_img_fire"
+            android:layout_width="60dp"
+            android:layout_height="74dp"
+            android:layout_alignBottom="@+id/general_img_hand"
+            android:layout_marginBottom="23dp"
+            android:layout_toLeftOf="@+id/general_img_hand"
+            android:src="@drawable/fire" />
+
+    </RelativeLayout>
+
+</LinearLayout>

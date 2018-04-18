@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+    
+	<TextView
+	    android:id="@+id/settings_tv_bcast_on"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="    Test Broadcast data"
+	    android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.70" />
+
+    <CheckBox
+        android:id="@+id/settings_cb_bcast_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="0.14" />
+    
+    
+</LinearLayout>

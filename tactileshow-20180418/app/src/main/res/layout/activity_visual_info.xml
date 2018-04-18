@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tactileshow.view.DefinedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+  <LinearLayout
+        android:id="@+id/visual_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+            android:id="@+id/visual_chart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/button_history_area"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_visual_history_area_button_size"
+            android:background="#00ffffff"
+            android:drawableEnd="@drawable/history_area_visible"
+            android:layout_marginEnd="10dp"
+            android:text="@string/label_history_area_str"
+            android:textSize="@dimen/dimen_visual_text_size" />
+
+      	<RelativeLayout
+      	    android:id="@+id/visual_history_layout"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="wrap_content"
+      	    android:visibility="invisible" >
+            
+             <Button
+            	android:id="@+id/button_one_hour"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginStart="24dp"
+            	android:layout_marginTop="20dp"
+            	android:text="@string/button_history_area_one_hour" />
+
+            <Button
+                android:id="@+id/button_one_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/button_history_area_one_day" />
+
+            <Button
+                android:id="@+id/button_one_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/button_history_area_one_month" />
+            
+            <TabHost android:id="@+id/history_query_host"
+ 		    	android:layout_width="match_parent"
+ 		    	android:layout_alignTop="@+id/button_one_day"
+ 		    	android:layout_marginTop="60dp"
+ 		    	android:layout_marginBottom="50dp"
+  			   	android:layout_height="match_parent"
+  			   	>
+  			   	<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+			     	  <com.tactileshow.view.DefinedTabWidget android:id="@android:id/tabs" 
+					      android:layout_width="wrap_content" 
+					      android:layout_height="wrap_content" >
+	 			       </com.tactileshow.view.DefinedTabWidget>
+			
+	     	<!-- FrameLayout的id属性必须为 @android:id/tabcontent-->
+		     <FrameLayout android:id="@android:id/tabcontent"
+			      android:layout_width="wrap_content"
+			      android:layout_height="match_parent">    
+			      <LinearLayout 
+			          android:id="@+id/one_hour_query_layout"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:layout_marginStart="20dp"
+			          android:layout_marginTop="20dp">
+			          <com.tactileshow.view.TimeEditor
+			              android:id="@+id/edit_from_hour"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:inputType="time"/>
+			          <TextView 
+			              android:id="@+id/label_hour_to_hour"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:text="-"/>
+			          <com.tactileshow.view.TimeEditor
+			              android:id="@+id/edit_to_hour"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:inputType="time"/>
+			          <Button 
+			              android:id="@+id/button_query_hour"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:text="@string/button_query_str"/>
+			      </LinearLayout>
+			      
+			      <LinearLayout 
+			          android:id="@+id/one_day_query_layout"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:layout_marginTop="20dp">
+			          <com.tactileshow.view.DateEditor
+			              android:id="@+id/edit_from_day"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:inputType="time"/>
+			          <TextView 
+			              android:id="@+id/label_hour_to_day"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:text="-"/>
+			          <com.tactileshow.view.DateEditor
+			              android:id="@+id/edit_to_day"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:inputType="time"/>
+			          <Button 
+			              android:id="@+id/button_query_day"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:text="@string/button_query_str"/>
+			      </LinearLayout>
+			      
+		     </FrameLayout>
+	     
+	     </LinearLayout>
+   	 	</TabHost>
+    </RelativeLayout>
+
+
+    </LinearLayout>
+   
+</com.tactileshow.view.DefinedScrollView>
